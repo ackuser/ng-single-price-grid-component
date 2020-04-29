@@ -1,0 +1,28 @@
+/* Add application styles & imports to this file! */
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Karla;
+	background-color: #025373;
+	color: white;
+	margin: 0;
+	padding: 0;
+  font-size:16px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 550px) { 
+ 
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 850px) { 
+  
+}
