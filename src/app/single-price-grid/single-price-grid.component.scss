@@ -1,0 +1,138 @@
+//IT SHOULD BE ...
+//@import '_colors';
+@import '../../assets/styles/colors';
+
+:host {
+
+  .card {
+
+    &__title {
+      font-size: xx-large;
+
+      &--light {        
+        color: $brigth_yellow;
+      }
+
+      &--dark {
+        color: white;
+      }
+    }
+
+    &__subtitle {
+      font-size: x-large;
+      color: $brigth_yellow;
+    }
+
+    &__text {
+      font-size: medium;
+
+      &--price-amount {
+        font-size: xx-large;
+        font-weight: 700;
+      }
+
+      &--price-desc {
+        // There is no light font
+        font-weight: 200;
+        opacity: .4;
+      }
+
+      &--light {        
+        color: $grayish_blue;
+      }
+
+      &--dark {
+        color: $light_gray;
+      }
+
+    }
+
+    &__list {
+      list-style-type: none;
+      color: $light_gray;
+      font-weight: 200;
+    }
+
+
+    &__header {
+      background: white;
+      padding: 5%;
+    }
+
+    &__body {
+      background: $cyan;
+      padding: 5%;
+    }
+
+    &__footer {
+      background: $cyan2;
+      padding: 5%;
+    }
+
+  }
+}
+
+
+header {
+  
+
+  h1 {
+    color: $cyan;
+  }
+
+  h2 {
+    color: $brigth_yellow;
+  }
+
+p { 
+    color: $brigth_yellow;
+  }
+
+  span { 
+    color: $brigth_yellow;
+  }
+
+}
+
+
+section {
+  
+
+  h1 {
+    color: $cyan;
+  }
+
+  h2 {
+    color: $brigth_yellow;
+  }
+
+p { 
+    color: $brigth_yellow;
+  }
+
+  span { 
+    color: $brigth_yellow;
+  }
+
+}
+
+footer {
+  background: white;
+
+  h1 {
+    color: $cyan;
+  }
+
+  h2 {
+    color: $brigth_yellow;
+  }
+
+p { 
+    color: $brigth_yellow;
+  }
+
+  span { 
+    color: $brigth_yellow;
+  }
+
+}
