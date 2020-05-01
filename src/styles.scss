@@ -1,6 +1,8 @@
 /* Add application styles & imports to this file! */
 @import url("https://fonts.googleapis.com/css?family=Karla:200,400,700&display=swap");
 
+@import './assets/styles/colors';
+
 html {
   box-sizing: border-box;
 }
@@ -24,4 +26,23 @@ body {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 850px) { 
   
+}
+
+.button {
+  width: 100%;
+  //margin: 5%;
+  margin: 5% 1%;
+  padding: 12px; 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+
+  &--primary {
+    background: $brigth_yellow;
+    color:white;
+  }
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  }
 }

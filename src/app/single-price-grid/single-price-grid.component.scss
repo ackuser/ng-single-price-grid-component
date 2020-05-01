@@ -10,11 +10,15 @@
       font-size: xx-large;
 
       &--light {        
-        color: $brigth_yellow;
+        color: $cyan;
       }
 
       &--dark {
         color: white;
+      }
+
+      &--spacer-bt-lines {
+        line-height: 1.8;
       }
     }
 
@@ -51,8 +55,11 @@
       list-style-type: none;
       color: $light_gray;
       font-weight: 200;
-    }
 
+      &__item {
+        margin: 2%
+      } 
+    }
 
     &__header {
       background: white;
@@ -73,66 +80,3 @@
 }
 
 
-header {
-  
-
-  h1 {
-    color: $cyan;
-  }
-
-  h2 {
-    color: $brigth_yellow;
-  }
-
-p { 
-    color: $brigth_yellow;
-  }
-
-  span { 
-    color: $brigth_yellow;
-  }
-
-}
-
-
-section {
-  
-
-  h1 {
-    color: $cyan;
-  }
-
-  h2 {
-    color: $brigth_yellow;
-  }
-
-p { 
-    color: $brigth_yellow;
-  }
-
-  span { 
-    color: $brigth_yellow;
-  }
-
-}
-
-footer {
-  background: white;
-
-  h1 {
-    color: $cyan;
-  }
-
-  h2 {
-    color: $brigth_yellow;
-  }
-
-p { 
-    color: $brigth_yellow;
-  }
-
-  span { 
-    color: $brigth_yellow;
-  }
-
-}
