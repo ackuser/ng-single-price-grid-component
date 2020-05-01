@@ -2,9 +2,41 @@
 //@import '_colors';
 @import '../../assets/styles/colors';
 
+//IT DOES NOT EXIST
+.card-item-basic {
+  cursor: default;
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 1 30vh;
+}
+
 :host {
 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2px;
+  height: 100vh;
+
+  // SYNTACTIC SUGAR
   .card {
+
+    &__header {
+      background: white;
+      padding: 5%;
+      @extend .card-item-basic;
+    }
+
+    &__body {
+      background: $cyan;
+      padding: 5%;
+      @extend .card-item-basic;
+    }
+
+    &__footer {
+      background: $cyan2;
+      padding: 5%;
+      @extend .card-item-basic;
+    }
 
     &__title {
       font-size: xx-large;
@@ -60,22 +92,6 @@
         margin: 2%
       } 
     }
-
-    &__header {
-      background: white;
-      padding: 5%;
-    }
-
-    &__body {
-      background: $cyan;
-      padding: 5%;
-    }
-
-    &__footer {
-      background: $cyan2;
-      padding: 5%;
-    }
-
   }
 }
 
