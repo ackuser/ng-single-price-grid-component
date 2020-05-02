@@ -3,43 +3,71 @@
 @import '../../assets/styles/colors';
 
 //IT DOES NOT EXIST
-.card-item-basic {
-  cursor: default;
+.card-flex-item-basic {
   display: flex;
-  flex-flow: column wrap;
-  flex: 0 1 30vh;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+
+  height: 100%;  
+  padding: 2% 5%;
+
+  cursor: default;
 }
 
 :host {
 
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2px;
-  height: 100vh;
+  grid-gap: .6px;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  box-shadow: $box-shadow;
+
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
 
   // SYNTACTIC SUGAR
   .card {
 
     &__header {
+      //grid-row: 1 / 2;
+      //grid-column: 1 / 1;
+      grid-area: header;
+
       background: white;
-      padding: 5%;
-      @extend .card-item-basic;
+    
+
+
+      @extend .card-flex-item-basic;
     }
 
     &__body {
+      //grid-row: 2 / 3;
+      //grid-column: 1 / 1;
+      grid-area: body;
+
       background: $cyan;
-      padding: 5%;
-      @extend .card-item-basic;
+    
+      @extend .card-flex-item-basic;
     }
 
     &__footer {
+      //grid-row: 3 / 4;
+      //grid-column: 1 / 1;
+      grid-area: footer;
+
       background: $cyan2;
-      padding: 5%;
-      @extend .card-item-basic;
+    
+      @extend .card-flex-item-basic;
     }
 
     &__title {
-      font-size: xx-large;
+      flex: 0 1 auto;
+
+      font-size: x-large;
+
 
       &--light {        
         color: $cyan;
@@ -50,16 +78,20 @@
       }
 
       &--spacer-bt-lines {
-        line-height: 1.8;
+        line-height: 1.2;
       }
     }
 
     &__subtitle {
-      font-size: x-large;
+      flex: 0 1 auto;
+
+      font-size: large;
       color: $brigth_yellow;
     }
 
     &__text {
+      flex: 0 1 auto;
+
       font-size: medium;
 
       &--price-amount {
@@ -85,13 +117,19 @@
 
     &__list {
       list-style-type: none;
+      font-size: small;
       color: $light_gray;
       font-weight: 200;
 
       &__item {
-        margin: 2%
+        padding: 2%
       } 
     }
+
+    .button {
+      align-self: flex-end !important;
+    } 
+
   }
 }
 
