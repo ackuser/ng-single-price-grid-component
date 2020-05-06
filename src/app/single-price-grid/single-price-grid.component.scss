@@ -2,6 +2,8 @@
 //@import '_colors';
 @import '../../assets/styles/colors';
 
+//WE DON'T NEED ORDER ...
+
 //IT DOES NOT EXIST
 .card-flex-item-basic {
   display: flex;
@@ -17,6 +19,7 @@
 :host {
 
   display: grid;
+  
   grid-gap: .6px;
   grid-template-columns: 100%;
   grid-template-rows: 1fr 1fr 1fr;
@@ -27,6 +30,18 @@
     "header"
     "body"
     "footer";
+
+@media only screen and (min-width: 768px) {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  background: pink;
+
+  grid-template-areas:
+    "header header"
+    "body footer";
+}
+
 
   // SYNTACTIC SUGAR
   .card {
